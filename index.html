@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en"> 
-<link rel="stylesheet" href="./index.css" />
+<link rel="stylesheet" href="./index.css"/>
+<link rel="script" href="./index.js" />
 <head>
 	<title>Portfolio Website</title>
 	<meta charset="utf-8"> 
+
+  <script>
+		function changeImage() {
+			var image = document.getElementById('image');
+			
+			if (image.src.match("image.jpg")) {
+				image.src = "./image2.jpg";
+				}
+			else {
+				image.src = "./image.jpg";
+				}
+								}
+	</script>
+
 </head>
 
 <body> 
 	<nav>
-      <h2 id="logo">Ryan Race</h2>
+      <h1 id="logo">Ryan Race</h2>
       <ul class="navigation-items">
         <li class="navigation-item"><a href="">About Me</a></li>
         <li class="navigation-item"><a href="">Contact</a></li>
@@ -22,19 +37,49 @@
       <section id="about-me">
         <div id="about-me-container">
           <div id="about-me-text">
-              <h2>About Me</h2>
+              <h1>About Me</h2>
               <p>Hi! I'm Ryan, an aspiring Web Designer/Developer currently working through a CareerSwitch traineeship to pursue a full time career.</p>
+              <p>This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! This is temporary filler text! </p>
+              <p>In my free time, I enjoy playing Videogames, listening to Music and watching Anime.</p>
+
+              
 
             </div>
             <img
               src="./image.jpg"
-              alt=""
+              alt="An image of a China Town shop with Neon lights"
               id="image"
+              onclick="changeImage()"
             >
         </div>
       </section>
-    </main>
 
+      <section class="fav-games">
+        <h2>Favourite Games</h2>
+
+        <h3><u>Remnants: From the Ashes</u></h3>
+          <img
+            class="game-image"
+            src="./game1.jpg"
+            alt=""
+            />
+
+        <h3><u>The Division 2</u></h3>
+          <img
+            class="game-image"
+            src="./game2.jpg"
+            alt=""
+            />
+
+        <h3><u>Sea of Thieves</u></h3>
+          <img
+            class="game-image"
+            src="./game3.jpg"
+            alt=""
+            />
+
+      </section>
+    </main>
 </body>
 
 <footer>
