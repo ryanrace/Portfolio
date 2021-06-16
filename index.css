@@ -12,13 +12,14 @@
 html, body {
     height: 100%;
     color: var(--font-color);
+    background-color: #f1f1f1;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0 var(--spacing-3);
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -59,6 +60,20 @@ a {
     font-weight: 600;
 }
 
+#about-me-container {
+    display: flex;
+}
+
+#about-me-text {
+    margin-right: var(--spacing-3);
+}
+
+#image {
+    height: auto;
+    width: 400px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
 
 @media only screen and (max-width: 600px) {
     .about-me-container {
